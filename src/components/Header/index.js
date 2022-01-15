@@ -1,45 +1,79 @@
 import React from "react";
+import SignIn from "./components/SignIn"
 import './style.css'
 
 const Header = () => {
+
+    const { signup, signin} = this.state;
+
+    constructor = (props) => {
+        super(props)
+
+        this.state = {
+            signin: false,
+            signup: false,
+
+        }
+    }
+
+    onOpenModal = () =>{
+        this.setState({ signin:true });
+    };
+
+    onOpenModalSignup = () =>{
+        this.setState({ signup:true });
+    };
+
+    onCloseModal = () =>{
+        this.setState({ signin: false });
+    };
+
+    onCloseModalclose = () =>{
+        this.setState({ signup:false });
+    };
+
     return (
+        <>
         <header>
-            <div class="p-3 bg-light text-black">
+            <div className="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <div class="nav justify-content-lg-start">
-                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
-                            <li>
-                                <a class="nav-link px-2 text-secondary" href="#">Home</a>
+                    <a class="navbar-brand" href="#">LOGO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
                             </li>
-                            <li>
-                                <a class="nav-link px-2 text-black" href="#">Features</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
                             </li>
-                            <li>
-                                <a class="nav-link px-2 text-black" href="#">Pricing</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
                             </li>
-                            <li>
-                                <a class="nav-link px-2 text-black" href="#">FAQs</a>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" margin="5px" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                </svg>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
                             </li>
                         </ul>
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                             <input class="form-control form-control-dark" type="search" placeholder="Search..." aria-label="Search" />
                         </form>
                         <div class="text-end">
-                            <button type="button" class="btn btn-outline-dark me-2">Sing In</button>
-                            <button type="button" class="btn btn-warning">Sing Up</button>
+                            <button type="button" class="btn btn-outline-dark" id="signin" onClick={this.onOpenModal}>Sing In</button>
+                            <button type="button" class="btn btn-warning" id="signup" onClick={this.onOpenModalSignup}>Sing Up</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="p-5 bg-image">
+        </header>
+        <div id="modalSignin" className="modal modal-signin py-5" tabIndex="-1" role="dialog">
+            <div className="modal-dialog" role="document">
 
             </div>
-        </header>
+        </div>
+        </>
+
     )
 };
 
