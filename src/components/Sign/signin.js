@@ -4,10 +4,10 @@ import React from "react";
 const Signin = () =>{
 
 return(
-    <div className="modal fade modal-signin py-5" id="exampleModal"  tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal fade modal-signin py-5" id="modalSignin"  tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog" role="document">
             <div className="modal-content rounded-5 shadow">
-                <div className="modal-header p-5" id="exampleModalLabel">
+                <div className="modal-header p-5">
                     <h3>Sign In!</h3>
                     <button className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
