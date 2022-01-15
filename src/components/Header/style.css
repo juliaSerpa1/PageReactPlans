@@ -2,7 +2,7 @@
     padding: 15px;
 }
 .modal{
-    position: static;
+    position: fixed;
     display: block;
-    
+
 }
