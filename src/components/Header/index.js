@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <>
         <header>
-            <div className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">LOGO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,11 +32,11 @@ const Header = () => {
                             </li>
                         </ul>
                         <div class="text-end">
-                            <button type="button" class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#modalSignin">
+                            <button type="button" class="btn btn-outline-info"  data-bs-toggle="modal" data-bs-target="#modalSignin">
                                 <Signin/>
                                 Sing In
                             </button>
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalSignup">
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalSignup">
                                 <Signup/>
                                 Sing Up
                             </button>
