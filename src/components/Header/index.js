@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <>
         <header>
-            <div className="navbar navbar-expand-lg fixed-top navbar-light">
+            <div className="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">LOGO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

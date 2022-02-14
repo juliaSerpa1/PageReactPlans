@@ -2,14 +2,15 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css'
-import backgroundImage from '../../assets/liquidabstract3D.png'
 
 const Home = () =>{
     return(
         <>
             <section>
-                <div className='homeBackground'>
-                <img src={backgroundImage}></img>
+                <div className='cardPromo'>
+                    <h1>UltraGigue-se com a mais nova tecnologia 5G</h1>
+                    <small>tenha Waze, ligação e Whatsapp avontade, aproveite, mude, ganhe</small>
+                    <button type="button" class="btn btn-outline-info col-6">Confira nossas ofertas!</button>
                 </div>
             </section>
         </>
