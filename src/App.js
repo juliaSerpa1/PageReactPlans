@@ -1,12 +1,17 @@
 import  React  from 'react';
-import './App.css';
-import Header from "./components/Header";
+import Header from './components/Header';
+// import Home from './components/Home'
+import './App.css'
+import backgroundImage from './assets/liquidabstract3D.png'
 
 const App = () => {
     return(
       <>
         <div className='App cover-container'>
-          <Header/>
+        <Header/>
+          <div className='homeBackground img-fluid'>
+            <img src={backgroundImage}></img>
+          </div>
         </div>  
       </>
     )
