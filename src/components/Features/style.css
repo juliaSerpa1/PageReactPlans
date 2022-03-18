@@ -1,0 +1,16 @@
+img{
+    width: 50%;
+    border-radius: 100px;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+
+}
+.featuresCard{
+    flex-direction: column;
+    align-self: center;
+}

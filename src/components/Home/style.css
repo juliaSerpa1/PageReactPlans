@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'fonts3d';
+    src: url(funnypages.ttf) format('truetype');
+}
+h1{
+    font-family: 'fonts3d';
+    font-style: bold;
+}
+section{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 700px;
+}
 .cardPromo{
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
+    align-items:center;
     color: rgb(65, 62, 62);
 
 }

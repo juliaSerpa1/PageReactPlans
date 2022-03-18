@@ -4,5 +4,5 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import App from './App';
 
-ReactDOM.render(<App />,document.getElementById('root')
-);
+const rootNode = document.getElementById('root');
+ReactDOM.render(<App />, rootNode);

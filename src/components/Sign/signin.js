@@ -2,9 +2,9 @@ import React from "react";
 
 
 const Signin = () =>{
-
 return(
-    <div className="modal fade modal-signin py-5" id="modalSignin"  tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <>
+    <div className="modal fade modal-signin py-5" id="modalSignin" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog" role="document">
             <div className="modal-content rounded-5 shadow">
                 <div className="modal-header p-5">
@@ -61,6 +61,7 @@ return(
             </div>
         </div>
     </div>
+    </>
     )
 };
 export default Signin;
