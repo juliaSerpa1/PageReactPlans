@@ -10,21 +10,21 @@ const Features = () =>{
             <section id="features" className='container'>
                 <div className='features row-cols-lg-3'>
                     <div className="featuresCard">
-                        <img src={Feature1}/>
+                        <img className='imgFeature' src={Feature1}/>
                         <h2>Features title</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when 
                         looking at its layout. The point of using Lorem Ip is that it has a more </p>
                         <a></a>
                     </div>
                     <div className='featuresCard'>
-                        <img src={Feature2}/>
+                        <img className='imgFeature' src={Feature2}/>
                         <h2>Features title</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when 
                         looking at its layout. The point of using Lorem Ip is that it has a more</p>
                         <a></a>
                     </div>
                     <div className='featuresCard'>
-                    <img src={Feature3}/>
+                    <img className='imgFeature' src={Feature3}/>
                         <h2>Features title</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when 
                         looking at its layout. The point of using Lorem Ipsum is that it has a more </p>

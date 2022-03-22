@@ -1,0 +1,15 @@
+.abouts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.imgAbout{
+    height: 100vh;
+    border-radius: 10px;
+}
+.about{
+    text-align: center;
+    padding: 50px;
+}

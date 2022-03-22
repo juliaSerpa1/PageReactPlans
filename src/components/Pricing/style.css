@@ -1,0 +1,26 @@
+.cardPricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+.cards{
+    flex-direction: column;
+}
+.card-header{
+    text-align: center;
+}
+.card-body{
+    text-align: center;
+}
+.vazio{
+    width: 34%;
+}
+.title{
+    widht: 22%;
+}
+.bi{
+    width: 24px;
+    height: 24px;
+}

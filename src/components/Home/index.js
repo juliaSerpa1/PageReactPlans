@@ -7,7 +7,7 @@ const Home = () =>{
     return(
         <>
             <section>
-                <div className='cardPromo'>
+                <div className='cardPromo container'>
                     <h1>UltraGigue-se com tecnologia 5G</h1>
                     <small>tenha Waze, ligação e Whatsapp avontade, aproveite, mude, ganhe</small>
                     <button type="button" class="btn btn-outline-info col-6">Confira nossas ofertas!</button>

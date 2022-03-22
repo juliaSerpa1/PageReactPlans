@@ -19,6 +19,9 @@ module.exports = {
           }
         ]
     },
+    alias: {
+        assets: path.resolve(__dirname, 'src/assets/'),
+    },
     plugins:[
         new HtmlWebpackPlugin({
             template:'./src/index.html',

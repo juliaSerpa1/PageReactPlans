@@ -1,6 +1,9 @@
-img{
+.imgFeature{
     width: 50%;
     border-radius: 100px;
+}
+.container{
+    padding-bottom:30rem;
 }
 .features{
     display: flex;
@@ -8,6 +11,7 @@ img{
     justify-content: space-around;
     width: 100%;
     align-items: center;
+    padding-bottom: 0;
 
 }
 .featuresCard{
