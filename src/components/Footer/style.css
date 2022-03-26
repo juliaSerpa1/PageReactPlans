@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(156, 153, 153);
+    padding-bottom: 0px;
+}
+.icon{
+    padding-right: 5px;
+}

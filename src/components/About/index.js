@@ -6,7 +6,10 @@ const About = ()=>{
     return(
         <>
             <section className='abouts'>
-                <img className='imgAbout' src={ImgAbout}/>
+                <div className='aboultImg'>
+                    <img className='imgAbout' src={ImgAbout}/>
+                </div>
+                <div className='cardAbout'>
                     <div  className='About'>
                         <h5>Going through the cites of the word</h5>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority 
@@ -21,6 +24,7 @@ const About = ()=>{
                         free from repetition,</p>
                         <button type="button" class="btn btn-info col-6">Info</button>
                     </div>
+                </div>
             </section>
         </>
     )
