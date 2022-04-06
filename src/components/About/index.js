@@ -1,15 +1,18 @@
-import React from 'react'
-import './style.css'
-import ImgAbout from '../../assets/about.jpg'
+import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './style.css';
+import ImgAbout from '../../assets/about.jpg';
 
 const About = ()=>{
+    AOS.init();
     return(
         <>
             <section className='abouts'>
-                <div className='aboultImg'>
+                <div className='aboultImg' data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="1500">
                     <img className='imgAbout' src={ImgAbout}/>
                 </div>
-                <div className='cardAbout'>
+                <div className='cardAbout' data-aos="zoom-out-down">
                     <div  className='About'>
                         <h5>Going through the cites of the word</h5>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority 

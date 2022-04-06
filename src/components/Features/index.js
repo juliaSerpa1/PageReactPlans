@@ -1,14 +1,17 @@
 import React from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './style.css'
 import Feature1 from '../../assets/feature1.jpg'
 import Feature2 from '../../assets/feature2.jpg'
 import Feature3 from '../../assets/feature3.jpg'
 
 const Features = () =>{
+    AOS.init();
     return(
         <>
             <section id="features" className='container'>
-                <div className='features row-cols-lg-3'>
+                <div className='features row-cols-lg-3'  data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500">
                     <div className="featuresCard">
                         <img className='imgFeature' src={Feature1}/>
                         <h2>Features title</h2>
@@ -32,8 +35,10 @@ const Features = () =>{
                     </div>
                 </div>
             </section>
+        
         </>
     )
+    
 }
 
 export default Features;

@@ -1,7 +1,7 @@
 .cardPricing{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10rem;
 }

@@ -1,10 +1,13 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './style.css';
 
 const Pricing = () => {
+    AOS.init();
     return(
         <> 
-            <section className='cardPricing'>
+            <section className='cardPricing' data-aos="zoom-in-up" data-aos-duration="1000">
                 <div className='cards'>
                     <div className='card'>
                         <div className='card-header'>
