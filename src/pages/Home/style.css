@@ -16,18 +16,25 @@ h1{
     font-family: 'fonts3d';
     font-style: bold;
 }
-section{
+/* .home{
+    background-image: url("../../assets/liquidabstract3D.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     display: flex;
-    justify-content: flex-start;
     padding-bottom: 700px;
-}
+} */
 .cardPromo{
     display: flex;
     flex-direction: column;
-    align-self:flex-start;
+    align-self:center;
     color: rgb(65, 62, 62);
     padding-top: 20rem;
     animation-name: fade-in-up;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
+}
+.text-end{
+    padding: 3rem;
 }

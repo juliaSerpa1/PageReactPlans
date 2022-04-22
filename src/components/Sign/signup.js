@@ -4,9 +4,9 @@ import React from "react";
 const Signup = () =>{
 
 return(
-    <div className="modal fade modal-signin py-5" id="modalSignup"  tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog" role="document">
-            <div className="modal-content rounded-5 shadow">
+    <div className="modal" id="modalSignup"  tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-scrollable">
+            <div className="modal-content rounded-5">
                 <div className="modal-header p-5">
                     <h3>Sign In!</h3>
                     <button className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
