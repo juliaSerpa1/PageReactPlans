@@ -5,8 +5,8 @@ import './style.css';
 
 const Pricing = () => {
     AOS.init();
-    return(
-        <> 
+    return (
+        <div>
             <section className='cardPricing' data-aos="zoom-in-up" data-aos-duration="1000">
                 <div className='cards'>
                     <div className='card'>
@@ -21,7 +21,7 @@ const Pricing = () => {
                                 <li>2 user included</li>
                                 <li>10 GB of storage</li>
                             </ul>
-                            <button type="button" class="btn btn-info">Join</button>
+                            <button type="button" className="btn btn-info">Join</button>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const Pricing = () => {
                                 <li>5 user included</li>
                                 <li>20 GB of storage</li>
                             </ul>
-                            <button type="button" class="btn btn-info">Join</button>
+                            <button type="button" className="btn btn-info">Join</button>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Pricing = () => {
                                 <li>8 user included</li>
                                 <li>40 GB of storage</li>
                             </ul>
-                            <button type="button" class="btn btn-info">Join</button>
+                            <button type="button" className="btn btn-info">Join</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Pricing = () => {
                                 <li>20 user included</li>
                                 <li>70 GB of storage</li>
                             </ul>
-                            <button type="button" class="btn btn-info">Join</button>
+                            <button type="button" className="btn btn-info">Join</button>
                         </div>
                     </div>
                 </div>
@@ -89,58 +89,58 @@ const Pricing = () => {
                         </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th className='text-start'>Velocity 5G</th>
-                        <td>
-                            <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th className='text-start'>Sharing</th>
-                        <td></td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th className='text-start'>Extra security</th>
-                        <td></td>
-                        <td></td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th className='text-start'>App ilimited</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                        <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png"/>
-                        </td>
-                    </tr>
+                        <tr>
+                            <th className='text-start'>Velocity 5G</th>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th className='text-start'>Sharing</th>
+                            <td></td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th className='text-start'>Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th className='text-start'>App ilimited</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <img className='bi' src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-check-mintab-for-ios-becris-lineal-becris-1.png" alt="img" />
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
-        </>
+        </div>
     )
 }
 

@@ -1,40 +1,50 @@
 @keyframes fade-in-up{
-    from{
+    from {
         filter: opacity(0);
         transform: translateY(15px);
     }
-    to{
+    to {
         filter: opacity(1);
         transform: translateY(0px);
     }
 }
+
 @font-face {
     font-family: 'fonts3d';
     src: url(funnypages.ttf) format('truetype');
 }
+
 h1{
     font-family: 'fonts3d';
     font-style: bold;
 }
-/* .home{
+
+.home{
     background-image: url("../../assets/liquidabstract3D.png");
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     position: absolute;
     display: flex;
-    padding-bottom: 700px;
-} */
+    justify-content: center;
+    align-items: center;
+}
+
 .cardPromo{
     display: flex;
     flex-direction: column;
-    align-self:center;
+    align-items: flex-start;
     color: rgb(65, 62, 62);
-    padding-top: 20rem;
+    padding-bottom: 25rem;
     animation-name: fade-in-up;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
 }
+
+small{
+    padding-bottom: 10px;
+}
+
 .text-end{
     padding: 3rem;
 }

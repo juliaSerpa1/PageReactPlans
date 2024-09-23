@@ -5,10 +5,12 @@
     align-items: center;
     padding: 20px;
 }
+
 .imgAbout{
     height: 100vh;
     border-radius: 10px;
 }
+
 .cardAbout{
     text-align: center;
     padding: 50px;

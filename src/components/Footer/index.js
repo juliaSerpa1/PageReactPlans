@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Icon from '../../assets/icon.png'
 import './style.css'
 
-const Footer = () =>{
+const Footer = () => {
     return (
-        <>
+        <div>
             <section className='footer'>
-                <a>
-                    <img className='icon' src={Icon}/>
-                </a>
-                <a>2022 Company, Inc</a>
+                <Link to="/" aria-label="Icon link">
+                    <img className='icon' src={Icon} alt="Company icon" />
+                </Link>
+                <p>2022 Company, Inc</p>
             </section>
-        </>
+        </div>
     )
 }
 
