@@ -1,0 +1,42 @@
+#features {
+    background-image: url("../../assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: end; 
+    justify-content: center;
+}
+
+.imgCard {
+    width: 35vw;
+}
+
+.featuresCard {
+    display: block;
+    line-height: 1em;
+    flex-direction:column;
+    align-items: end;
+    text-align: end;
+    color: #fff;
+    margin: 1rem;
+}
+
+.imgFeature {
+    float: left;
+    shape-outside: border-box;
+    justify-content: center;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50px;
+    padding: 10px;
+}

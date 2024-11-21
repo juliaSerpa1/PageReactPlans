@@ -1,0 +1,49 @@
+.background{
+    background-image: url("../../assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+.cardPricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.vazio{
+    width: 34%;
+}
+
+.title{
+    width: 22%;
+}
+
+.table-responsive{
+}
+
+.bi{
+    width: 24px;
+    height: 24px;
+}

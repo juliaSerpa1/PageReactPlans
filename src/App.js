@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
-import Features from './pages/Features';
-import Pricing from './pages/Pricing';
+import Solutions from './pages/Solutions';
+import Plans from './pages/Plans';
 import About from './pages/About';
 import './App.css';
 
@@ -14,11 +13,10 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/features' element={<Features />} />
-                <Route path='/pricing' element={<Pricing />} />
+                <Route path='/solutions' element={<Solutions />} />
+                <Route path='/plans' element={<Plans />} />
                 <Route path='/about' element={<About />} />
             </Routes>
-            <Footer />
         </Router>
     )
 }

@@ -1,17 +1,34 @@
 .abouts{
+    background-image: url("../../assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-}
-
-.imgAbout{
-    height: 100vh;
-    border-radius: 10px;
 }
 
 .cardAbout{
-    text-align: center;
-    padding: 50px;
+    text-align: start;
+    color: white;
+}
+
+.imgAbout{
+    width: 25vw;
+}
+
+.buttonClose{
+    display: flex;
+    justify-content: end;
+}
+
+.buttonFooter{
+    display: flex;
+    justify-content: end;
+}
+
+.button{
+    margin: 5px;
 }
