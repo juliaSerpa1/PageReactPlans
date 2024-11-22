@@ -2,9 +2,17 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
+import { useCart } from '../../contexts/CartContext';
 
 const Pricing = () => {
     AOS.init();
+
+    const { addToCart } = useCart();
+
+    const handleJoin = (product) => {
+        addToCart(product);
+    };
+
     return (
         <div className='background'>
             <section className='cardPricing' data-aos="zoom-in-up" data-aos-duration="1000">
@@ -21,7 +29,7 @@ const Pricing = () => {
                                 <li>2 user included</li>
                                 <li>10 GB of storage</li>
                             </ul>
-                            <button type="button" className="btn btn-dark">Join</button>
+                            <button type="button" className="btn btn-dark" onClick={() => handleJoin({ name: "Pro", price: 23 })}>Join</button>
                         </div>
                     </div>
                 </div>
@@ -38,7 +46,7 @@ const Pricing = () => {
                                 <li>5 user included</li>
                                 <li>20 GB of storage</li>
                             </ul>
-                            <button type="button" className="btn btn-dark">Join</button>
+                            <button type="button" className="btn btn-dark" onClick={() => handleJoin({ name: "Prime", price: 49 })}>Join</button>
                         </div>
                     </div>
                 </div>
@@ -55,7 +63,7 @@ const Pricing = () => {
                                 <li>8 user included</li>
                                 <li>40 GB of storage</li>
                             </ul>
-                            <button type="button" className="btn btn-dark">Join</button>
+                            <button type="button" className="btn btn-dark" onClick={() => handleJoin({ name: "Business", price: 66 })}>Join</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +80,7 @@ const Pricing = () => {
                                 <li>20 user included</li>
                                 <li>70 GB of storage</li>
                             </ul>
-                            <button type="button" className="btn btn-dark">Join</button>
+                            <button type="button" className="btn btn-dark" onClick={() => handleJoin({ name: "Enterprise", price: 100 })}>Join</button>
                         </div>
                     </div>
                 </div>

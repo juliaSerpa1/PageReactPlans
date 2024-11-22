@@ -1,8 +1,12 @@
 import React from "react";
 import './style.css';
 import { NavLink } from "react-router-dom";
+import { useCart } from "../../contexts/CartContext";
 
 const Header = () => {
+
+    const { getCartQuantity } = useCart();
+
     return (
         <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
             <div className="container">
@@ -21,7 +25,12 @@ const Header = () => {
                         </li>
                     </ul>
                     <div>
-                        <img className="carrinho" src="https://img.icons8.com/?size=100&id=0DBkCUANmgoQ&format=png&color=FFFFFF" alt='carrinho'/>
+                        <NavLink to="/cart">
+                            <button className="btn btn-dark">
+                                <img className="carrinho" src="https://img.icons8.com/?size=100&id=0DBkCUANmgoQ&format=png&color=FFFFFF" alt='carrinho'/>
+                                <span>{getCartQuantity()}</span>
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
         </nav>

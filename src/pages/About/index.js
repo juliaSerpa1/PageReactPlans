@@ -6,9 +6,23 @@ import './style.css';
 import ImgAbout from '../../assets/about.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import * as bootstrap from 'bootstrap';
 
 const About = () => {
     AOS.init();
+
+    const [successMessage, setSuccessMessage] = useState(false);
+
+    const handleSave = () => {
+        setSuccessMessage(true);
+        // Fechar o modal programaticamente
+        const modal = document.getElementById('exampleModal');
+        const modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+
+        // Ocultar a mensagem de sucesso após 3 segundos
+        setTimeout(() => setSuccessMessage(false), 3000);
+    };
 
     return (
         <div>
@@ -53,11 +67,16 @@ const About = () => {
                             </div>
                         </div>
                         <div className="buttonFooter">
-                            <button type="button" className="btn btn-primary button">Save changes</button>
+                            <button type="button" className="btn btn-primary button" onClick={handleSave} data-bs-dismiss="modal">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
+            {successMessage && (
+                <div className="alert alert-success" role="alert" style={{ position: 'fixed', top: '10px', right: '10px', zIndex: 1050 }}>
+                    The message has been sent successfully!
+                </div>
+            )}
         </div>
     );
 };
