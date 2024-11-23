@@ -1,7 +1,9 @@
-.abouts{
+/* Centralização da seção principal e fundo */
+.abouts {
     background-image: url("../../assets/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,25 +12,69 @@
     align-items: center;
 }
 
-.cardAbout{
+/* Estilo do Card */
+.cardAbout {
     text-align: start;
     color: white;
 }
 
-.imgAbout{
+.imgAbout {
     width: 25vw;
 }
 
-.buttonClose{
-    display: flex;
-    justify-content: end;
+/* Estilo do botão */
+.responsive-btn {
+    width: 15vw;
+    padding: 12px 30px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.buttonFooter{
+/* Modal Centralizado */
+.modal-dialog {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.button{
-    margin: 5px;
+/* Close button position */
+.buttonClose {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Footer button position */
+.buttonFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Responsivo - Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .responsive-btn {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .modal-dialog {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .modal-content {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
 }
