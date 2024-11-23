@@ -8,6 +8,8 @@
     width: 100vw;
     height: 100vh;
     padding: 3rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .features {
@@ -39,4 +41,33 @@
     object-fit: cover;
     border-radius: 50px;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #features {
+        padding: 1rem; /* Ajusta o padding para telas pequenas */
+        height: auto;  /* Deixa o height automático para evitar corte */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgCard {
+        width: 100%;  /* Ajusta a largura da imagem principal em telas menores */
+        margin-bottom: 2rem; /* Espaço adicional entre a imagem e os cards */
+    }
+
+    .features {
+        flex-direction: column; /* Coloca as features um embaixo do outro em dispositivos móveis */
+        align-items: center;  /* Centraliza os itens na tela */
+    }
+
+    .featuresCard {
+        width: 90%;  /* Cards ocupam 90% da largura da tela em dispositivos móveis */
+        text-align: center;
+    }
+
+    .imgFeature {
+        width: 100px;  /* Ajusta o tamanho da imagem no card */
+        height: 100px;
+    }
 }
