@@ -4,15 +4,23 @@ body, html {
     height: 100%;
     width: 100%;
 }
+.container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Garantir que padding e bordas não ultrapassem o limite */
+}
 
+/* A cart ocupa toda a altura da tela */
 .cart {
     background-image: url("../../assets/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    position: relative
+    position: relative;
+    overflow-x: hidden; /* Impede qualquer transbordamento horizontal */
 }
+
 /* Modal */
 .modal {
     position: fixed;
@@ -25,6 +33,11 @@ body, html {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+}
+
+/* Defina a largura das colunas para telas menores */
+.col-md-2 {
+    width: 100%; /* Isso vai garantir que as colunas não saiam da tela em dispositivos pequenos */
 }
 
 .modal-dialog {
@@ -57,4 +70,10 @@ body, html {
 
 .buttonCloseModal button{
     color: white;
+}
+
+@media (min-width: 768px) {
+    .col-md-2 {
+        width: 16.6667%; /* Exemplo de coluna dividida em 6 partes */
+    }
 }

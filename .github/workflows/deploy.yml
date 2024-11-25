@@ -1,0 +1,31 @@
+name: Deploy React App 
+
+on:
+  push:
+    branches:
+      - main      # Ou a branch que você preferir
+  pull_request:
+    branches:
+      - main      # Ou a branch que você preferir
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    
+    - name: Set up Node.js (Node 20)
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+    
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the app
+      run: npm run build
+    
+    - name: Run tests (opcional, se você tiver testes configurados)
+      run: npm test -- --coverage
