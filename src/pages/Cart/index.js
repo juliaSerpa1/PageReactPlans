@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useCart } from '../../contexts/CartContext'; // Importe o contexto
 import './style.css';
 import IconCart from '../../assets/iconCart2.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
     const { cart, removeFromCart, clearCart } = useCart(); // Pegue o carrinho e a função de remover

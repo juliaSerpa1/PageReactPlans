@@ -11,8 +11,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
+    - name: Set CI environment variable to false
+      run: echo "CI=false" >> $GITHUB_ENV
+      
     - name: Checkout repository
       uses: actions/checkout@v2
     

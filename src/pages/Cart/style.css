@@ -59,12 +59,12 @@ body, html {
 .modal-buttons {
     margin: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .buttonCloseModal{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 20px;
 }
 
