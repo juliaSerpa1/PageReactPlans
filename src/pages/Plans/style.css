@@ -1,4 +1,4 @@
-.background{
+.background {
     background-image: url("../../assets/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,41 +9,63 @@
     width: 100vw;
     height: 100vh;
     padding-top: 5rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.cardPricing{
+.cardPricing {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-bottom: 5rem;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.card-header{
+.card-header {
+    text-align: center;
+    align-items: center;
+}
+
+.card-body {
     text-align: center;
 }
 
-.card-body{
-    text-align: center;
-}
-
-.vazio{
+.vazio {
     width: 34%;
 }
 
-.title{
+.title {
     width: 22%;
 }
 
-.table-responsive{
-}
-
-.bi{
+.bi {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 480px) {
+    .cards {
+        padding: 0px;
+    }
+
+
+    .card-header h4 {
+        font-size: 1.2rem;
+        /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    .card-header h4:nth-child(1) {
+        font-size: 1rem;
+        /* Para o card "Pro" */
+    }
+
+    .card-header h4:nth-child(2) {
+        font-size: 1rem;
+        /* Para o card "Prime" */
+    }
 }

@@ -1,4 +1,4 @@
-// src/contexts/CartContext.js
+//src/contexts/CartContext.js
 import React, { createContext, useContext, useState } from "react";
 
 const CartContext = createContext();
@@ -11,10 +11,10 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
-    if(cart.length < 3 ){
+    if(cart.length < 2 ){
       setCart((prevCart) => [...prevCart, product]);
     }else{
-      alert("Não pode adicionasr mais de 3 planos!")
+      alert("Not allowed to add more than 2 plans!")
     }
   };
 
@@ -26,9 +26,15 @@ export const CartProvider = ({ children }) => {
     return cart.length;
   };
 
+  const clearCart = () => {
+    setCart([]);  // Limpa o carrinho
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, getCartQuantity }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, getCartQuantity, clearCart }}>
       {children}
     </CartContext.Provider>
   );
+
+
 };
