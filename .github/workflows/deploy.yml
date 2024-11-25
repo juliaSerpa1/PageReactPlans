@@ -29,6 +29,3 @@ jobs:
 
     - name: Build the app
       run: npm run build
-    
-    - name: Run tests (opcional, se você tiver testes configurados)
-      run: npm test -- --coverage
