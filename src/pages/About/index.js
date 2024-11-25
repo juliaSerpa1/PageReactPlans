@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
-import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import './style.css';
 import ImgAbout from '../../assets/about.png';
