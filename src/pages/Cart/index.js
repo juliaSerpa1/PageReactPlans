@@ -96,7 +96,7 @@ const Cart = () => {
             {showModal && (
                 <div className="modal">
                     <div className="modal-dialog">
-                        <div className="modal-content">
+                        <div className="modal-content"  style={{ background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,201,201,1) 0%, rgba(216,0,228,1) 100%)', color: 'white' }}>
                             <div className='buttonCloseModal'>
                                 <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" onClick={handleCloseModal}></button>
                             </div>
