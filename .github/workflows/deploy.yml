@@ -3,10 +3,10 @@ name: Deploy React App
 on:
   push:
     branches:
-      - main      # Ou a branch que você preferir
+      - main
   pull_request:
     branches:
-      - main      # Ou a branch que você preferir
+      - main
 
 jobs:
   build:
@@ -29,3 +29,10 @@ jobs:
 
     - name: Build the app
       run: npm run build
+
+    - name: Heroku Deploy
+      uses: akshnz/heroku-deploy@v1.0.0
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_NAME }}
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
