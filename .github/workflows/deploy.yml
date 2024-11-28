@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Set CI environment variable to false
-      run: echo "CI=false" >> $GITHUB_ENV
-      
     - name: Checkout repository
       uses: actions/checkout@v2
     
@@ -31,7 +28,7 @@ jobs:
       run: npm run build
 
     - name: Heroku Deploy
-      uses: akshnz/heroku-deploy@v1.0.0
+      uses: akshnz/heroku-deploy-action@v2
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: ${{ secrets.HEROKU_NAME }}
