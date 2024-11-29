@@ -47,7 +47,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="aboultImg" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="1500">
-                    <img className="imgAbout" src={ImgAbout} alt="img" />
+                    <img loading="lazy" className="imgAbout" src={ImgAbout} alt="img" />
                 </div>
             </section>
 
@@ -57,7 +57,6 @@ const About = () => {
                 </div>
             )}
 
-            {/* Modal */}
             {isModalOpen && (
                 <div className="modal fade show" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false" style={{ display: 'block' }}>
                     <div className="modal-dialog" style={{ padding: 0 }}>
