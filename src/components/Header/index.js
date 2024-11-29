@@ -27,7 +27,7 @@ const Header = () => {
                     <div>
                         <NavLink to="/cart">
                             <button className="btn btn-dark">
-                                <img className="carrinho" src="https://img.icons8.com/?size=100&id=0DBkCUANmgoQ&format=png&color=FFFFFF" alt='carrinho'/>
+                                <img loading="lazy" className="carrinho" src="https://img.icons8.com/?size=100&id=0DBkCUANmgoQ&format=png&color=FFFFFF" alt='carrinho'/>
                                 <span>{getCartQuantity()}</span>
                             </button>
                         </NavLink>

@@ -13,23 +13,23 @@ const Features = () => {
         <div>
             <section id="features">
                 <div className='img'>
-                    <img className='imgCard' src={Solution} alt="img" />
+                    <img loading="lazy" className='imgCard' src={Solution} alt="img" />
                 </div>
                 <div className='features row-cols-lg-2' data-aos="zoom-in-up" data-aos-duration="1000">
                     <div className="featuresCard">
-                        <img className='imgFeature' src={Solution1} alt="img" />
+                        <img loading="lazy" className='imgFeature' src={Solution1} alt="img" />
                         <h2>Connection Carriers</h2>
                         <p>Discover a complete platform with digital security, connection, voice
                             services, and infrastructure partnership solutions</p>
                     </div>
                     <div className='featuresCard'>
-                        <img className='imgFeature' src={Solution2} alt="img" />
+                        <img loading="lazy" className='imgFeature' src={Solution2} alt="img" />
                         <h2>Security Solutions</h2>
                         <p>Invest in voice service for internal and external call management with
                             multiple possibilities with the DDoS Protection service</p>
                     </div>
                     <div className='featuresCard'>
-                        <img className='imgFeature' src={Solution3} alt="img" />
+                        <img loading="lazy" className='imgFeature' src={Solution3} alt="img" />
                         <h2>Voice Services</h2>
                         <p>It is one of the promoters of IPv6 and has a broad portfolio of solutions
                             that consider this approach and experience for its users</p>

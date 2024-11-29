@@ -49,7 +49,7 @@ const Cart = () => {
                                 <div className="card-body p-4">
                                     <div className="row align-items-center">
                                         <div className="col-md-2">
-                                            <img src={IconCart} className="img-fluid" alt="Item" style={{ width: '7rem' }} />
+                                            <img loading="lazy" src={IconCart} className="img-fluid" alt="Item" style={{ width: '7rem' }} />
                                         </div>
                                         <div className="col-md-2 d-flex justify-content-center">
                                             <div>
