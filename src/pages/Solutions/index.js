@@ -12,9 +12,10 @@ const Features = () => {
     return (
         <div>
             <section id="features">
-                <div className='img'>
-                    <img loading="lazy" className='imgCard' src={Solution} alt="img" />
-                </div>
+                <picture>
+                    <source srcSet={Solution} type="image/webp" />
+                    <img loading="lazy" className='imgCard' src={Solution} alt="Imagem principal" />
+                </picture>
                 <div className='features row-cols-lg-2' data-aos="zoom-in-up" data-aos-duration="1000">
                     <div className="featuresCard">
                         <img loading="lazy" className='imgFeature' src={Solution1} alt="img" />
