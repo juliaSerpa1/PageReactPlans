@@ -20,20 +20,20 @@ const Features = () => {
                     <div className="featuresCard">
                         <img loading="lazy" className='imgFeature' src={Solution1} alt="img" />
                         <h2>Connection Carriers</h2>
-                        <p>Discover a complete platform with digital security, connection, voice
+                        <p>Discover a complete platform with digital security, voice
                             services, and infrastructure partnership solutions</p>
                     </div>
                     <div className='featuresCard'>
                         <img loading="lazy" className='imgFeature' src={Solution2} alt="img" />
                         <h2>Security Solutions</h2>
-                        <p>Invest in voice service for internal and external call management with
+                        <p>Invest in voice service for call management with
                             multiple possibilities with the DDoS Protection service</p>
                     </div>
                     <div className='featuresCard'>
                         <img loading="lazy" className='imgFeature' src={Solution3} alt="img" />
                         <h2>Voice Services</h2>
                         <p>It is one of the promoters of IPv6 and has a broad portfolio of solutions
-                            that consider this approach and experience for its users</p>
+                            that consider this and experience for its users</p>
                     </div>
                 </div>
             </section>
